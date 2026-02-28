@@ -1,73 +1,76 @@
-# Welcome to your Lovable project
+📌 FairPay — Expose Unfair Price Discrimination
 
-## Project info
+Team Cicada
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Team Members:
 
-## How can I edit this code?
+Vaishnav K – Leader
 
-There are several ways of editing your application.
+Hadi
 
-**Use Lovable**
+Riyan
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+🧠 Project Description
 
-Changes made via Lovable will be committed automatically to this repo.
+FairPay is a web app designed to raise awareness about price discrimination and unfair pricing practices in online platforms. Algorithms today may set different prices for the same product or service based on user behaviour, past purchases, device data, or inferred characteristics — a phenomenon closely related to price discrimination and dynamic pricing algorithms. In many cases, customers end up paying more simply because of how pricing algorithms profile them, leading to concerns around fairness and transparency in digital markets.
 
-**Use your preferred IDE**
+FairPay helps visualize and educate users about these practices. It exposes how pricing might change based on inputs, demonstrates when pricing feels unfair, and provides a simple, data-driven UI to understand pricing fairness for everyday goods or services. This tool is intended as a social awareness and educational website showcasing how algorithm-driven pricing decisions could impact different users and encouraging fairer pricing practices in software applications.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🚀 Features
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+📊 Interactive Dashboard: View simulated pricing scenarios to explore how prices vary depending on contextual data (like time, demand, or user attributes).
 
-Follow these steps:
+🧪 Realistic Pricing Models: Demonstrates dynamic pricing patterns influenced by demand, competitor activity, or user behavior algorithms.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+🧠 Educational Content: Explains the concept of price discrimination and algorithm-based pricing in simple terms for non-technical audiences.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+👁️ Visual Fairness Indicators: Highlights when prices may be unfair or discriminatory, helping users understand the ethical side of automated pricing.
 
-# Step 3: Install the necessary dependencies.
-npm i
+🛠️ Tech Stack
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Frontend: React.js / Next.js (for interactive UI components and server-side rendering)
+
+Backend: Optional API (for pricing simulations)
+
+Deployment: Hosted on Vercel for fast global distribution.
+
+UI Libraries: TailwindCSS / Component UI
+
+📌 How It Works
+
+User Input or Simulation:
+Users either input product or scenario parameters, or explore pre-set pricing situations.
+
+Pricing Engine Simulation:
+The app calculates dynamic prices using simplified rules that mimic real-world dynamic pricing logic — for example, adjusting price with demand signals or competitor pricing data.
+
+Fairness Evaluation:
+Each pricing result is evaluated on fairness metrics — whether the price differs significantly from a baseline or other users, and whether such variation would be perceived as discriminatory.
+
+Interactive Feedback:
+Users get a clear visual breakdown of why prices differed and what the potential fairness issues might be.
+
+📝 Why This Matters
+
+In the digital economy, pricing is no longer static. Today’s algorithms adjust prices in real time — aiming to maximize revenue or balance demand — but they can also unintentionally lead to unfair discrimination among users if not designed with transparency and fairness in mind.
+
+FairPay empowers users, developers, and businesses to see behind the pricing curtain — fostering better understanding, responsible design, and ultimately, consumer trust.
+
+🧩 Usage
+
+To run it locally:
+
+git clone https://github.com/<your-repo>/dynamic-prizing
+cd dynamic-prizing
+npm install
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+Visit http://localhost:3000 to interact with the application.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+📬 Contact & Team
 
-**Use GitHub Codespaces**
+For questions, demos, or contributions:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Team Cicada
+Leader: Vaishnav K
+Members: Hadi, Riyan
