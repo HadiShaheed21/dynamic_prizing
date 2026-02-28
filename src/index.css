@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  :root {
+    --background: 220 20% 4%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 18% 7%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 18% 7%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 155 100% 50%;
+    --primary-foreground: 220 20% 4%;
+
+    --secondary: 220 15% 12%;
+    --secondary-foreground: 0 0% 85%;
+
+    --muted: 220 15% 12%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 185 80% 50%;
+    --accent-foreground: 220 20% 4%;
+
+    --destructive: 0 85% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 38 95% 55%;
+    --warning-foreground: 220 20% 4%;
+
+    --fair: 155 100% 50%;
+    --unfair: 0 85% 55%;
+
+    --border: 220 15% 15%;
+    --input: 220 15% 12%;
+    --ring: 155 100% 50%;
+
+    --radius: 0.75rem;
+
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-sans: 'Inter', system-ui, sans-serif;
+
+    --glow-primary: 0 0 30px hsl(155 100% 50% / 0.3);
+    --glow-destructive: 0 0 30px hsl(0 85% 55% / 0.3);
+    --glow-accent: 0 0 30px hsl(185 80% 50% / 0.3);
+
+    --sidebar-background: 220 18% 7%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 155 100% 50%;
+    --sidebar-primary-foreground: 220 20% 4%;
+    --sidebar-accent: 220 15% 12%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 220 15% 15%;
+    --sidebar-ring: 155 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: var(--font-sans);
+  }
+}
+
+@layer utilities {
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+
+  .text-gradient-primary {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+  }
+
+  .text-gradient-danger {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--destructive)), hsl(var(--warning)));
+  }
+
+  .glass-card {
+    @apply bg-card/60 backdrop-blur-xl border border-border/50 rounded-xl;
+  }
+
+  .glow-primary {
+    box-shadow: var(--glow-primary);
+  }
+
+  .glow-destructive {
+    box-shadow: var(--glow-destructive);
+  }
+
+  .scan-line {
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      hsl(var(--primary) / 0.05) 45%,
+      hsl(var(--primary) / 0.15) 50%,
+      hsl(var(--primary) / 0.05) 55%,
+      transparent 100%
+    );
+  }
+
+  .grid-bg {
+    background-image: 
+      linear-gradient(hsl(var(--border) / 0.3) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--border) / 0.3) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+}
